@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="296dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="584dp"
+        android:background="#FFFFFF"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="#3ED109"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/urduSurah"
+        android:layout_width="368dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#2196F3"
+        android:letterSpacing="0.5"
+        android:text="@string/urduSurah"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/englishSurah"
+        android:layout_width="368dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#2196F3"
+        android:letterSpacing="0.4"
+        android:text="@string/englishSurah"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urduSurah" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
