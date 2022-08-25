@@ -2,4 +2,6 @@
     <string name="app_name">QURAN KAREEM</string>
     <string name="urduSurah">SURAH URDU</string>
     <string name="englishSurah">SURAH ENGLISH</string>
+    <string name="englishPara">PARAH ENGLISH</string>
+    <string name="urduPara">PARAH URDU</string>
 </resources>

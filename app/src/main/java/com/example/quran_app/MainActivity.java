@@ -5,11 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
-
-import  com.example.quran_app.QDH;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 //    QDH qdh = new QDH();
 
 
-    Button surahEng,surahUrdu;
+    Button surahEng,surahUrdu,engPara,urduPara;
 
 
     @Override
@@ -26,8 +22,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        surahEng = findViewById(R.id.englishSurah);
-        surahUrdu = findViewById(R.id.urduSurah);
+        surahEng = findViewById(R.id.engSuraBtn);
+        surahUrdu = findViewById(R.id.urduSuraBtn);
+        engPara = findViewById(R.id.engParaBtn);
+        urduPara = findViewById(R.id.urduParaBtn);
 
         surahEng.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +41,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        engPara.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ParahEng.class);
+                startActivity(intent);
+            }
+        });
+
+        urduPara.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ParahUrdu.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
 
  
     }

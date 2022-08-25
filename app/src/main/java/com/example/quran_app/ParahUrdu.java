@@ -9,40 +9,43 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class SurahInEnglish extends AppCompatActivity {
+public class ParahUrdu extends AppCompatActivity {
 
-    ListView listview;
-
-
-    QDH qdh = new QDH();
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_surah_in_english);
+        setContentView(R.layout.activity_parah_urdu);
 
-        String[] surahNames = qdh.englishSurahNames;
+        QDH qdh = new QDH();
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,surahNames);
-        listview = findViewById(R.id.engListView);
-        listview.setAdapter(arrayAdapter);
+        String[] urduParah = qdh.ParahName;
+
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,urduParah);
+
+        listView = findViewById(R.id.paraUrdu);
+
+        listView.setAdapter(arrayAdapter);
 
 
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                int start = qdh.SSP[i];
-                int end = qdh.SSP[i+1];
+                int start = qdh.PSP[i];
+                int end = qdh.PSP[i+1];
                 QuranArabicText qat = new QuranArabicText();
                 if (start == 6342) {
                     end = qat.QuranArabicText.length - 1;
                 }
-                Intent intent = new Intent(SurahInEnglish.this, Surah.class);
+                Intent intent = new Intent(ParahUrdu.this, Surah.class);
                 intent.putExtra("start", start);
                 intent.putExtra("end", end);
                 startActivity(intent);
             }
         });
+
+
 
     }
 }

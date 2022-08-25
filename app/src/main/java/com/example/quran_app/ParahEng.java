@@ -9,35 +9,38 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class SurahInEnglish extends AppCompatActivity {
+import com.example.quran_app.QDH;
+public class ParahEng extends AppCompatActivity {
 
-    ListView listview;
-
-
-    QDH qdh = new QDH();
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_surah_in_english);
-
-        String[] surahNames = qdh.englishSurahNames;
-
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,surahNames);
-        listview = findViewById(R.id.engListView);
-        listview.setAdapter(arrayAdapter);
+        setContentView(R.layout.activity_parah_eng);
 
 
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        QDH qdh = new QDH();
+
+        String[] paraInEng = qdh.englishParahName;
+
+
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,paraInEng);
+
+        listView = findViewById(R.id.parahEng);
+
+        listView.setAdapter(arrayAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                int start = qdh.SSP[i];
-                int end = qdh.SSP[i+1];
+                int start = qdh.PSP[i];
+                int end = qdh.PSP[i+1];
                 QuranArabicText qat = new QuranArabicText();
                 if (start == 6342) {
                     end = qat.QuranArabicText.length - 1;
                 }
-                Intent intent = new Intent(SurahInEnglish.this, Surah.class);
+                Intent intent = new Intent(ParahEng.this, Surah.class);
                 intent.putExtra("start", start);
                 intent.putExtra("end", end);
                 startActivity(intent);
