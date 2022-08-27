@@ -47,6 +47,5 @@ public class ParahUrdu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }

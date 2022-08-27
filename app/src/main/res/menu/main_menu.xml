@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_SurahUrdu"
+            android:title="Surah (Urdu)" />
+
+        <item
+            android:id="@+id/nav_SurahEng"
+            android:title="Surah (Eng)" />
+
+
+        <item
+            android:id="@+id/nav_ParaUrdu"
+            android:title="Parah (Urdu)" />
+
+        <item
+            android:id="@+id/nav_ParaEng"
+            android:title="Parah (Eng)" />
+
+    </group>
+
+    <item android:title="Developer Contact">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="ialiabbas@gmail.com" />
+                <item
+                    android:title="Lahore, Punjab, Pakistan" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Social Links">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="Linkedin" />
+                <item
+                    android:id="@+id/nav_insert_comment"
+                    android:title="FaceBook" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

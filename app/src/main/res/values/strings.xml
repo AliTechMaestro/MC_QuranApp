@@ -4,4 +4,6 @@
     <string name="englishSurah">SURAH ENGLISH</string>
     <string name="englishPara">PARAH ENGLISH</string>
     <string name="urduPara">PARAH URDU</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>
