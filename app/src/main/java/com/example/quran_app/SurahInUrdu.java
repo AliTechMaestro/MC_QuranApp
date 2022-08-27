@@ -22,9 +22,8 @@ public class SurahInUrdu extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_surah_in_urdu);
 
-
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
-                (this, android.R.layout.simple_list_item_1,qdh.urduSurahNames);
+                (this, R.layout.list_item_text,qdh.urduSurahNames);
         listView = findViewById(R.id.urduListView);
         listView.setAdapter(arrayAdapter);
 

@@ -56,24 +56,29 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.nav_SurahUrdu:
-                        Toast.makeText(getApplicationContext(),"Surah (Urdu) is Clicked",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"Surah (Urdu)",Toast.LENGTH_LONG).show();
                         Intent intent1 = new Intent(MainActivity.this,SurahInUrdu.class);
                         startActivity(intent1);
                         break;
-                    case R.id.nav_SurahEng:
-                        Toast.makeText(getApplicationContext(),"Surah (Eng) is Clicked",Toast.LENGTH_LONG).show();
-                        Intent intent2 = new Intent(MainActivity.this,SurahInEnglish.class);
+                    case R.id.nav_Home:
+                        Toast.makeText(getApplicationContext(),"Home",Toast.LENGTH_LONG).show();
+                        Intent intent2 = new Intent(MainActivity.this,Home.class);
                         startActivity(intent2);
                         break;
-                    case R.id.nav_ParaUrdu:
-                        Toast.makeText(getApplicationContext(),"Parah (Urdu) is Clicked",Toast.LENGTH_LONG).show();
-                        Intent intent3 = new Intent(MainActivity.this,ParahUrdu.class);
+                    case R.id.nav_SurahEng:
+                        Toast.makeText(getApplicationContext(),"Surah (Eng)",Toast.LENGTH_LONG).show();
+                        Intent intent3 = new Intent(MainActivity.this,SurahInEnglish.class);
                         startActivity(intent3);
                         break;
-                    case R.id.nav_ParaEng:
-                        Toast.makeText(getApplicationContext(),"Parah (Eng) is Clicked",Toast.LENGTH_LONG).show();
-                        Intent intent4 = new Intent(MainActivity.this,ParahEng.class);
+                    case R.id.nav_ParaUrdu:
+                        Toast.makeText(getApplicationContext(),"Parah (Urdu)",Toast.LENGTH_LONG).show();
+                        Intent intent4 = new Intent(MainActivity.this,ParahUrdu.class);
                         startActivity(intent4);
+                        break;
+                    case R.id.nav_ParaEng:
+                        Toast.makeText(getApplicationContext(),"Parah (Eng)",Toast.LENGTH_LONG).show();
+                        Intent intent5 = new Intent(MainActivity.this,ParahEng.class);
+                        startActivity(intent5);
                         break;
                 }
                 return true;

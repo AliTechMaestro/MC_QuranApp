@@ -19,13 +19,12 @@ public class ParahEng extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parah_eng);
 
-
         QDH qdh = new QDH();
 
         String[] paraInEng = qdh.englishParahName;
 
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,paraInEng);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.list_item_text,paraInEng);
 
         listView = findViewById(R.id.parahEng);
 
@@ -38,12 +37,12 @@ public class ParahEng extends AppCompatActivity {
                 int end;
                 QuranArabicText qat = new QuranArabicText();
                 if (start == 5747) {
-                    end = qat.QuranArabicText.length; // 6348
+                    end = qat.QuranArabicText.length ; // 6348
                 }
                 else{
                     end = qdh.PSP[i+1];
                 }
-                Intent intent = new Intent(ParahEng.this, Surah.class);
+                Intent intent = new Intent(ParahEng.this, Parah.class);
                 intent.putExtra("start", start);
                 intent.putExtra("end", end);
                 startActivity(intent);

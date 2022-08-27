@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quran_App">
         <activity
+            android:name=".Parah"
+            android:exported="false" />
+        <activity
             android:name=".Home"
             android:exported="false" />
         <activity

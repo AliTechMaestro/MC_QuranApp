@@ -7,8 +7,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Surah extends AppCompatActivity  {
 
@@ -32,9 +30,7 @@ public class Surah extends AppCompatActivity  {
             data.add(qat.QuranArabicText[i]);
         }
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
-                (this, android.R.layout.simple_list_item_1,data);
+                (getApplicationContext(), R.layout.quran_text,data);
         listView.setAdapter(arrayAdapter);
-
     }
-
 }

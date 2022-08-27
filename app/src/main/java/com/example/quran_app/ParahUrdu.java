@@ -22,12 +22,11 @@ public class ParahUrdu extends AppCompatActivity {
 
         String[] urduParah = qdh.ParahName;
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,urduParah);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.list_item_text,urduParah);
 
         listView = findViewById(R.id.paraUrdu);
 
         listView.setAdapter(arrayAdapter);
-
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -41,7 +40,7 @@ public class ParahUrdu extends AppCompatActivity {
                 else{
                     end = qdh.PSP[i+1];
                 }
-                Intent intent = new Intent(ParahUrdu.this, Surah.class);
+                Intent intent = new Intent(ParahUrdu.this, Parah.class);
                 intent.putExtra("start", start);
                 intent.putExtra("end", end);
                 startActivity(intent);
@@ -49,3 +48,6 @@ public class ParahUrdu extends AppCompatActivity {
         });
     }
 }
+
+
+

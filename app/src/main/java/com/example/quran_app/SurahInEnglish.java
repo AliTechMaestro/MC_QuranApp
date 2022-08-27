@@ -23,7 +23,7 @@ public class SurahInEnglish extends AppCompatActivity {
 
         String[] surahNames = qdh.englishSurahNames;
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,surahNames);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.list_item_text,surahNames);
         listview = findViewById(R.id.engListView);
         listview.setAdapter(arrayAdapter);
 

@@ -4,13 +4,19 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_Home"
+            android:title="Home" />
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item
             android:id="@+id/nav_SurahUrdu"
             android:title="Surah (Urdu)" />
 
         <item
             android:id="@+id/nav_SurahEng"
             android:title="Surah (Eng)" />
-
 
         <item
             android:id="@+id/nav_ParaUrdu"
