@@ -28,8 +28,7 @@ public class Surah extends AppCompatActivity  {
         int start = intent.getIntExtra("start", 0);
         int end = intent.getIntExtra("end", 0);
 
-
-        for (int i = start; i < end - 1; i++) {
+        for (int i = start; i < end-1; i++) {
             data.add(qat.QuranArabicText[i]);
         }
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>

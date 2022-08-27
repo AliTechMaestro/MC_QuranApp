@@ -32,10 +32,13 @@ public class SurahInEnglish extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 int start = qdh.SSP[i];
-                int end = qdh.SSP[i+1];
+                int end;
                 QuranArabicText qat = new QuranArabicText();
-                if (start == 6342) {
-                    end = qat.QuranArabicText.length - 1;
+                if(start==6342){
+                    end = qat.QuranArabicText.length+1;
+                }
+                else{
+                    end = qdh.SSP[i+1];
                 }
                 Intent intent = new Intent(SurahInEnglish.this, Surah.class);
                 intent.putExtra("start", start);
