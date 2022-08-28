@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1885" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2115" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/drawable/quran_icon.xml" value="0.2115" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_customize_adapter.xml" value="0.19882246376811594" />
@@ -11,6 +12,7 @@
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_parah.xml" value="0.17572463768115942" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_parah_eng.xml" value="0.19882246376811594" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_parah_urdu.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_search.xml" value="0.25" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_surah.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_surah_in_english.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_surah_in_urdu.xml" value="0.19882246376811594" />
@@ -19,6 +21,7 @@
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/list_item_text.xml" value="0.17572463768115942" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/mycustom_list.xml" value="0.1802536231884058" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/menu/main_menu.xml" value="0.33" />
+        <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1885" />
       </map>
     </option>
   </component>

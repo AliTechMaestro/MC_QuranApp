@@ -8,8 +8,8 @@ android:layout_height="match_parent"
 
 <ListView
     android:id="@+id/engListView"
-    android:layout_width="398dp"
-    android:layout_height="711dp"
+    android:layout_width="385dp"
+    android:layout_height="match_parent"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"

@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -80,6 +81,24 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent5 = new Intent(MainActivity.this,ParahEng.class);
                         startActivity(intent5);
                         break;
+                    case R.id.nav_Search:
+                        Toast.makeText(getApplicationContext(),"Search",Toast.LENGTH_LONG).show();
+                        Intent intent6 = new Intent(MainActivity.this,Search.class);
+                        startActivity(intent6);
+                        break;
+                    case R.id.email:
+                        Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:"));
+                        startActivity(intent);
+                        break;
+                    case R.id.linkedin:
+                        Uri linkedin_profile = Uri.parse("https://www.linkedin.com/in/ali-abbas-45331b246/");
+                        Intent i = new Intent(Intent.ACTION_VIEW, linkedin_profile);
+                        startActivity(i);
+                        break;
+                    case R.id.github:
+                        Uri git_Profile = Uri.parse("https://github.com/BSEF19A525");
+                        Intent j = new Intent(Intent.ACTION_VIEW, git_Profile);
+                        startActivity(j);
                 }
                 return true;
             }
