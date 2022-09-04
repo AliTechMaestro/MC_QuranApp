@@ -14,7 +14,9 @@
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_parah_urdu.xml" value="0.19882246376811594" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_quran_eng_tarjuma.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_quran_urdu_tarjuma.xml" value="0.19021739130434784" />
-        <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_search.xml" value="0.22" />
+        <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_recycle_parah.xml" value="0.17617753623188406" />
+        <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_recyle_surah.xml" value="0.17617753623188406" />
+        <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_search.xml" value="0.25" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_surah.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_surah_in_english.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/activity_surah_in_urdu.xml" value="0.19882246376811594" />
@@ -22,6 +24,8 @@
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/list_item.xml" value="0.25" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/list_item_text.xml" value="0.17572463768115942" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/mycustom_list.xml" value="0.1802536231884058" />
+        <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/para_row.xml" value="0.17617753623188406" />
+        <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/layout/surah_row.xml" value="0.22" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/menu/main_menu.xml" value="0.33" />
         <entry key="..\:/Users/DELL PC/AndroidStudioProjects/Quran_App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1885" />
       </map>

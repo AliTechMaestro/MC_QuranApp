@@ -20,7 +20,7 @@ public class Surah extends AppCompatActivity  {
         setContentView(R.layout.activity_surah);
 
 
-        listView=findViewById(R.id.surahView);
+        listView=findViewById(R.id.recycleSurah);
 
         Intent intent = getIntent();
         int start = intent.getIntExtra("start", 0);

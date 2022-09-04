@@ -27,7 +27,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String Table_name="tayah";
 
     public DBHelper(@Nullable Context context) {
-        super(context, "myquran.db", null, 1);
+        super(context, "quran.db", null, 1);
     }
 
     @Override
@@ -38,9 +38,8 @@ public class DBHelper extends SQLiteOpenHelper {
                 + AyaNo + " Integer, " + ArabicText + " String, "+FatehMuhammadJalandhri+" String," +
                 MehmoodulHassan+" String,"+DrMohsinKhan+" String,"+MuftiTaqiUsmani+" String," +
                 RakuID+" Integer,"+PRakuID+" Integer,"+ParaID+" Integer ) ";
-        db.execSQL(createTableSTatement);
+//        db.execSQL(createTableSTatement);
     }
-
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

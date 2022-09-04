@@ -7,7 +7,7 @@
     tools:context=".Surah">
 
     <ListView
-        android:id="@+id/surahView"
+        android:id="@+id/recycleSurah"
         android:layout_width="385dp"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quran_App">
         <activity
+            android:name=".RecycleParah"
+            android:exported="false" />
+        <activity
+            android:name=".RecycleSurah"
+            android:exported="false" />
+        <activity
             android:name=".Search"
             android:exported="false" />
         <activity

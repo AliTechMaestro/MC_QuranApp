@@ -86,6 +86,14 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent6 = new Intent(MainActivity.this,Search.class);
                         startActivity(intent6);
                         break;
+                    case R.id.recSurah:
+                        Intent surah = new Intent (MainActivity.this,RecycleSurah.class);
+                        startActivity(surah);
+                        break;
+                    case R.id.recParah:
+                        Intent para = new Intent (MainActivity.this,RecycleParah.class);
+                        startActivity(para);
+                        break;
                     case R.id.email:
                         Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:"));
                         startActivity(intent);
@@ -99,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
                         Uri git_Profile = Uri.parse("https://github.com/BSEF19A525");
                         Intent j = new Intent(Intent.ACTION_VIEW, git_Profile);
                         startActivity(j);
+                        break;
                 }
                 return true;
             }

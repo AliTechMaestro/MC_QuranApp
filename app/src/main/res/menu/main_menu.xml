@@ -30,6 +30,21 @@
 
     </group>
 
+
+    <item android:title="Recycler View">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="Surah"
+                    android:id="@+id/recSurah"/>
+                <item
+                    android:title="Parah"
+                    android:id="@+id/recParah"/>
+            </group>
+        </menu>
+    </item>
+
+
     <item android:title="Developer Contact">
         <menu>
             <group android:checkableBehavior="single">
